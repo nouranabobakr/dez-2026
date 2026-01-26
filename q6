@@ -1,0 +1,14 @@
+WITH east_harlem AS (
+    SELECT LocationID
+    FROM taxi_zones
+    WHERE Zone = 'East Harlem North'
+)
+SELECT z.Zone AS dropoff_zone,
+       SUM(a.tip_amount) AS total_tip
+FROM green_trips_data a
+JOIN east_harlem eh ON a.PULocationID = eh.LocationID
+JOIN taxi_zones z ON a.DOLocationID = z.LocationID
+WHERE a.lpep_pickup_datetime BETWEEN '2025-11-01 00:00:00' AND '2025-11-30 23:59:59'
+GROUP BY z.Zone
+ORDER BY total_tip DESC
+LIMIT 1;
