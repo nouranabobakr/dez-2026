@@ -1,0 +1,8 @@
+SELECT DATE(a.lpep_pickup_datetime) AS pickup_day,
+       MAX(a.trip_distance) AS max_distance
+FROM green_trips_data a
+WHERE a.trip_distance < 100
+  AND a.lpep_pickup_datetime BETWEEN '2025-11-01 00:00:00' AND '2025-11-30 23:59:59'
+GROUP BY DATE(a.lpep_pickup_datetime)
+ORDER BY max_distance DESC
+LIMIT 1;
