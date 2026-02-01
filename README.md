@@ -68,9 +68,9 @@ Using sqlalchemy psycopg2-binary pandas libraries
 ### 5. Login to pgadmin 
 Go to http://localhost:8080/ and login, now we can write sql queries on our tables
 
-Create new server 
-Enter Sever Name
-Enter Host, User and Password (found in docker-compose.yaml)
+Create new server     
+Enter Sever Name      
+Enter Host, User and Password (found in docker-compose.yaml)      
 
 
 
