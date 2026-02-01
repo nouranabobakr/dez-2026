@@ -1,3 +1,3 @@
-#Module 1 Homework#
+# Module 1 Homework
 
-###Steps for solving homework###
+### Steps for solving homework
