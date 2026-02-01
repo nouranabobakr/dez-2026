@@ -4,7 +4,9 @@
 
 ### 1. Prepare .yaml file
 Write the docker-compose.yaml and run 
-```docker compose up -d```
+```
+docker compose up -d
+```
 ```
 services:
   db:
@@ -41,18 +43,22 @@ volumes:
 ### 2. Create Virtual envirnoment using venv
 
 We create a virtual envirnoment when we want to use python with diff libraries for a project
-```mkdir dez-hw1```
-```cd dez-hw1```
-```python -m venv venv```
-```source venv/bin/activate```
-```pip install pandas pyarrow sqlalchemy psycopg2-binary```
+```
+mkdir dez-hw1
+cd dez-hw1
+python -m venv venv
+source venv/bin/activate
+pip install pandas pyarrow sqlalchemy psycopg2-binary
+```
 
 
 ### 3. Install Jupyter
 Its better to install with pip inside virtual envirnoment then system-wide with sudo apt install jupyter
 
-```pip install jupyter```
-```jupyter notebook```
+```
+pip install jupyter
+jupyter notebook
+```
 
 
 ### 4. Read Data and Load into postgres
