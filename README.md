@@ -3,7 +3,7 @@
 ## Steps for solving homework
 
 ### 1. Prepare .yaml file
-Write the docker compose file and run 
+Write the docker-compose.yaml and run 
 ```docker compose up -d```
 ```
 services:
