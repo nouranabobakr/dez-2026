@@ -1,0 +1,3 @@
+SELECT COUNT(*) as total_rows
+FROM `dtc-de-course-484819.zoomcamp.yellow_tripdata`
+WHERE EXTRACT(YEAR FROM tpep_pickup_datetime) = 2020;
